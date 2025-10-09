@@ -1,0 +1,35 @@
+assembly:
+  assem_level: scaffold
+  sample_id: PseudomugilHalophilus3240756
+  latin_name: to_provide_taxonomic_rank
+  defined_class: actinopterygii
+  assem_version: 1
+  project_id: PseudomugilHalophilus3240756
+reference_file: s3://pawsey1132.afgi.assemblies/PseudomugilHalophilus3240756/results/sanger_tol/PseudomugilHalophilus3240756.hifiasm-hic.v1/scaffolding_hap1/yahs/out.break.yahs/hap1_scaffolds_final.fa
+map_order: length
+assem_reads:
+  read_type: hifi
+  read_data:
+    - s3://pawsey1132.afgi.assemblies/PseudomugilHalophilus3240756/results/sanger_tol/reads/hifi/Pseudomugil_sp_h_PU_2024_3240756_ccs_reads.fasta.gz
+  supplementary_data: path
+hic_data:
+  hic_cram:
+    - s3://pawsey1132.afgi.assemblies/PseudomugilHalophilus3240756/results/sanger_tol/reads/hic/Pseudomugil_sp_h_PU_2024_3240756.cram
+  hic_aligner: bwamem2
+kmer_profile:
+  # kmer_length will act as input for kmer_read_cov fastk and as the name of folder in profile_dir
+  kmer_length: 31
+  profile: pawsey1132.afgi.assemblies/PseudomugilHalophilus3240756/results/sanger_tol/kmer/
+alignment:
+  genesets:
+self_comp:
+  motif_len: 0
+intron:
+  size: "50k"
+telomere:
+  teloseq: TTAGGG
+synteny:
+    - foo/bar
+busco:
+  lineages_path: s3://pawsey1132.atol.refdata.busco/busco/lineages/
+  lineage: actinopterygii_odb10
