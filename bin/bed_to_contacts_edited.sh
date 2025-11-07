@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# this is a tweaked version of the bed_to_contacts.sh script that kept gigin me an OOM error
+# this is a tweaked version of the bed_to_contacts.sh script that kept giving me an OOM error
 # will pull request it at some point, but for now I'll just keep a copy for testing purposes
 
 version='1.0.0'
