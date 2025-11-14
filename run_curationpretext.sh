@@ -36,8 +36,8 @@ printf "nextflow: %s\n" "$( readlink -f $( which nextflow ) )"
 
 # set the NXF home for plugins etc
 export NXF_HOME="/software/projects/pawsey1132/atims/.nextflow"
-export NXF_CACHE_DIR="/scratch/pawsey1132/atims/treeval_testing/.nextflow"
-export NXF_WORK="${PWD}/work"
+export NXF_CACHE_DIR="/scratch/pawsey1132/atims/curationpretext/.nextflow"
+export NXF_WORK="/scratch/pawsey1132/atims/curationpretext/${BRANCH}/work"
 printf "NXF_HOME: %s\n" "${NXF_HOME}"
 printf "NXF_WORK: %s\n" "${NXF_WORK}"
 
@@ -46,8 +46,8 @@ printf "NXF_WORK: %s\n" "${NXF_WORK}"
 
 PIPELINE_PARAMS=(
         "--sample" "${SAMPLE_ID}"
-        "--outdir" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/results_both_haps"
-        "--input" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/scaffolds/scaffolds_both_haps.fa"
+        "--outdir" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/results"
+        "--input" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/scaffolds/scaffolds_both_haps_final.fa"
         "--reads" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/hifi/"
         "--cram" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/hic/"
         "--teloseq" "TTAGGG"
