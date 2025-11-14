@@ -12,15 +12,18 @@ BRANCH="p_signifer"
 mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/hic -p
 mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/hifi
 mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/scaffolds
+mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/results
+mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/work
 
 #create directory in home
-mkdir ~/curationpretext/${SAMPLE_ID} -p
+mkdir ~/curationpretext/${BRANCH} -p
 
 #symlink together
 ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/hic ~/curationpretext/${BRANCH}/hic
 ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/hifi ~/curationpretext/${BRANCH}/hifi
 ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/scaffolds ~/curationpretext/${BRANCH}/scaffolds
-
+ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/results ~/curationpretext/${BRANCH}/results
+ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/work ~/curationpretext/${BRANCH}/work
 
 ### pull files from acacia
 
@@ -44,7 +47,7 @@ sed 's/>/>HAP2_/g' ~/curationpretext/${BRANCH}/scaffolds/hap2_scaffolds_final.fa
 ### download files
 
 # download run_curationpretext file
-wget https://raw.githubusercontent.com/amytims/atol_treeval_testing/refs/heads/${BRANCH}/run_curationpretext.sh ~/curationpretext/${BRANCH}/
+wget https://raw.githubusercontent.com/amytims/atol_treeval_testing/refs/heads/${BRANCH}/run_curationpretext.sh -O ~/curationpretext/${BRANCH}/run_curationpretext.sh
 
 # download config file
-wget https://raw.githubusercontent.com/amytims/atol_treeval_testing/refs/heads/${BRANCH}/curationpretext_nf.config ~/curationpretext/${BRANCH}/
+wget https://raw.githubusercontent.com/amytims/atol_treeval_testing/refs/heads/${BRANCH}/curationpretext_nf.config -O ~/curationpretext/${BRANCH}/curationpretext_nf.config
