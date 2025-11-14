@@ -28,12 +28,12 @@ ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/work ~/curationpretext
 ### pull files from acacia
 
 # hic files
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hic/${SAMPLE_ID}.cram ~/curationpretext/${BRANCH}/hic/
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hic/${SAMPLE_ID}.cram.crai ~/curationpretext/${BRANCH}/hic/
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hic/${SAMPLE_ID}.flagstat ~/curationpretext/${BRANCH}/hic/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hic/${SAMPLE_ID}.cram ~/curationpretext/${BRANCH}/hic/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hic/${SAMPLE_ID}.cram.crai ~/curationpretext/${BRANCH}/hic/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hic/${SAMPLE_ID}.flagstat ~/curationpretext/${BRANCH}/hic/
 
 #hifi files
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hifi/${SAMPLE_ID}_ccs_reads.fasta.gz ~/curationpretext/${BRANCH}/hifi/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/processed_reads/hifi/ccs_reads.fasta.gz ~/curationpretext/${BRANCH}/hifi/
 
 # scaffold files
 rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/${SAMPLE_ID}.hifiasm-hic.v1/scaffolding_hap1/yahs/out.break.yahs/hap1_scaffolds_final.fa ~/curationpretext/${BRANCH}/scaffolds/

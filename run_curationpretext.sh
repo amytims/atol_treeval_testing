@@ -47,7 +47,7 @@ printf "NXF_WORK: %s\n" "${NXF_WORK}"
 PIPELINE_PARAMS=(
         "--sample" "${SAMPLE_ID}"
         "--outdir" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/results_both_haps"
-        "--input" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/scaffolds/scaffolds_both_haps.fa"
+        "--input" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/scaffolds/scaffolds_both_haps_final.fa"
         "--reads" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/hifi/"
         "--cram" "/scratch/pawsey1132/atims/curationpretext_test/${BRANCH}/hic/"
         "--teloseq" "TTAGGG"
