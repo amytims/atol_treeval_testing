@@ -10,8 +10,8 @@
 #SBATCH --partition=work
 
 
-SAMPLE_ID=""
-BRANCH=""
+SAMPLE_ID="PseudomugilHalophilus3240756"
+BRANCH="p_halophilus"
 
 module load singularity/4.1.0-nohost
 #module load nextflow/24.10.0
