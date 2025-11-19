@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --job-name=sangertol_curationpretext
+#SBATCH --job-name=sangertol_curationpretext_guyu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
@@ -10,8 +10,8 @@
 #SBATCH --partition=work
 
 
-SAMPLE_ID=""
-BRANCH=""
+SAMPLE_ID="MacquariaWujalwujalensis2976176"
+BRANCH="guyu"
 
 module load singularity/4.1.0-nohost
 #module load nextflow/24.10.0
