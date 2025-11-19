@@ -16,7 +16,7 @@ mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/results
 mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/work
 
 #create directory in home
-mkdir ~/curationpretext/${SAMPLE_ID} -p
+mkdir ~/curationpretext/${BRANCH} -p
 
 #symlink together
 ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/hic ~/curationpretext/${BRANCH}/hic
