@@ -39,7 +39,7 @@ rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_to
 
 #hifi files
 echo "pulling hifi files from Acacia"
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hifi/Pseudomugil_sp_h_PU_2024_3240756_ccs_reads.fasta.gz ~/curationpretext/${BRANCH}/hifi/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hifi/Pseudomugil_sp_h_PU_2024_3240756_ccs_reads.fasta.gz ~/curationpretext/${BRANCH}/hifi/
 
 # scaffold files
 echo "pulling scaffolded assemblies from Acacia"
