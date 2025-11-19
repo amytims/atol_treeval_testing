@@ -3,10 +3,10 @@
 module load rclone/1.68.1
 
 # name of sample I'm working with (e.g., Melanotaenia_RR)
-SAMPLE_ID=""
+SAMPLE_ID="MacquariaWujalwujalensis2976176"
 
 # name of github branch to pull files from, file paths to put them into (e.g., m_RR)
-BRANCH=""
+BRANCH="guyu"
 
 #create directories in /scratch
 mkdir /scratch/pawsey1132/atims/curationpretext/${BRANCH}/hic -p
