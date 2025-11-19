@@ -3,10 +3,10 @@
 module load rclone/1.68.1
 
 # name of sample I'm working with (e.g., Melanotaenia_RR)
-SAMPLE_ID=""
+SAMPLE_ID="PseudomugilHalophilus3240756"
 
 # name of github branch to pull files from, file paths to put them into (e.g., m_RR)
-BRANCH=""
+BRANCH="p_halophilus"
 
 #create directories in /scratch
 echo "creating directories on /scratch"
@@ -33,13 +33,13 @@ ln -s /scratch/pawsey1132/atims/curationpretext/${BRANCH}/work ~/curationpretext
 
 # hic files
 echo "pulling hic files from Acacia"
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hic/${SAMPLE_ID}.cram ~/curationpretext/${BRANCH}/hic/
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hic/${SAMPLE_ID}.cram.crai ~/curationpretext/${BRANCH}/hic/
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hic/${SAMPLE_ID}.flagstat ~/curationpretext/${BRANCH}/hic/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hic/Pseudomugil_sp_h_PU_2024_3240756.cram ~/curationpretext/${BRANCH}/hic/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hic/Pseudomugil_sp_h_PU_2024_3240756.cram.crai ~/curationpretext/${BRANCH}/hic/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/sanger_tol/reads/hic/Pseudomugil_sp_h_PU_2024_3240756.flagstat ~/curationpretext/${BRANCH}/hic/
 
 #hifi files
 echo "pulling hifi files from Acacia"
-rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hifi/${SAMPLE_ID}_ccs_reads.fasta.gz ~/curationpretext/${BRANCH}/hifi/
+rclone copy pawsey1132:pawsey1132.afgi.assemblies/${SAMPLE_ID}/results/reads/hifi/Pseudomugil_sp_h_PU_2024_3240756_ccs_reads.fasta.gz ~/curationpretext/${BRANCH}/hifi/
 
 # scaffold files
 echo "pulling scaffolded assemblies from Acacia"
