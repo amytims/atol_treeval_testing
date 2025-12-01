@@ -3,10 +3,10 @@
 module load rclone/1.68.1
 
 # name of sample I'm working with (e.g., Melanotaenia_RR)
-SAMPLE_ID=""
+SAMPLE_ID="AmbassisAgassizii613159"
 
 # name of github branch to pull files from, file paths to put them into (e.g., m_RR)
-BRANCH=""
+BRANCH="a_agassizii"
 
 #create directories in /scratch
 echo "creating directories on /scratch"
